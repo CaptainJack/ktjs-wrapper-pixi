@@ -9,6 +9,7 @@ import ru.capjack.ktjs.wrapper.pixi.Rectangle
 external open class DisplayObject : EventEmitter {
 	var alpha: Boolean
 	var buttonMode: Boolean
+	
 	var cacheAsBitmap:Boolean
 	var cursor:String
 	var filterArea:Rectangle?
