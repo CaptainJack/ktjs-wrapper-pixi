@@ -1,6 +1,6 @@
 package ru.capjack.ktjs.wrapper.pixi
 
-open class PointLike(x: Double = 0.0, y: Double = 0.0) {
+external open class PointLike(x: Double = 0.0, y: Double = 0.0) {
 	var x = x
 		private set(value) {
 			field = value
