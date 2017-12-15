@@ -2,15 +2,9 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class Matrix {
-	constructor(a: Double = definedExternally, b: Double = definedExternally, c: Double = definedExternally, d: Double = definedExternally, tx: Double = definedExternally, ty: Double = definedExternally);
+external class Matrix() {
 	
-//	var a: Double;
-//	var b: Double;
-//	var c: Double;
-//	var d: Double;
-//	var tx: Double;
-//	var ty: Double;
+	constructor(a: Double = definedExternally, b: Double = definedExternally, c: Double = definedExternally, d: Double = definedExternally, tx: Double = definedExternally, ty: Double = definedExternally)
 //
 //	fun fromArray(array: number[]): void;
 //	set(a: number, b: number, c: number, d: number, tx: number, ty: number): Matrix;
@@ -29,7 +23,11 @@ external class Matrix {
 //	clone(): Matrix;
 //	copy(matrix: Matrix): Matrix;
 	
-//	static IDENTITY: Matrix;
-//	static TEMP_MATRIX: Matrix;
+	companion object {
+		val IDENTITY: Matrix = definedExternally
+	}
 	
+	companion object {
+		val TEMP_MATRIX: Matrix = definedExternally
+	}
 }
