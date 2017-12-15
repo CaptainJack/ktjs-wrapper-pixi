@@ -14,6 +14,7 @@ external open class DisplayObject : EventEmitter {
 	var filterArea:Rectangle?
 //	var filters:Array<Filter>?
 //	var hitArea:Any
+	
 	var interactive: Boolean
 	var localTransform:Matrix
 	var mask: DisplayObject
