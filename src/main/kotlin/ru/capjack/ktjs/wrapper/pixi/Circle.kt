@@ -2,18 +2,13 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class Circle : HitArea {
-	//todo: describe
+import ru.capjack.ktjs.wrapper.pixi.HitArea
+import ru.capjack.ktjs.wrapper.pixi.Rectangle
 
-//	constructor(x?: number, y?: number, radius?: number);
-//
-//	x: number;
-//	y: number;
-//	radius: number;
-//	type: number;
-//
-//	clone(): Circle;
-//	contains(x: number, y: number): boolean;
-//	getBounds(): Rectangle;
-
+external class Circle(var x: Int = definedExternally, var y: Int = definedExternally, var radius: Double = definedExternally) : HitArea {
+	val type: Int = definedExternally
+	fun clone(): Circle
+	fun contains(x: Int, y: Int): Boolean
+	fun getBounds(): Rectangle
+	
 }
