@@ -3,7 +3,7 @@
 package ru.capjack.ktjs.wrapper.pixi
 
 
-external class Polygon(x: Int = definedExternally, y: Int = definedExternally, radius: Double = definedExternally) : HitArea {
+external class Polygon : HitArea {
 	var x: Int
 	var y: Int
 	var radius: Double
