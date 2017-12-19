@@ -2,8 +2,10 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class Filter {
+external class Filter() : Shader {
 	//todo:describe
+//	constructor(vertexSrc:String, fragmentSrc:String, uniforms)
+
 //	constructor(vertexSrc?: string, fragmentSrc?: string, uniforms?: UniformDataMap<U>);
 //
 //	vertexSrc?: string;
