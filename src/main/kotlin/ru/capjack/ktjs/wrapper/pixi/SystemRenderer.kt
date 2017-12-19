@@ -4,4 +4,5 @@
 package ru.capjack.ktjs.wrapper.pixi
 
 external class SystemRenderer {
+	//todo:description
 }
