@@ -3,7 +3,7 @@
 package ru.capjack.ktjs.wrapper.pixi
 
 
-external class Polygon() : HitArea {
+external class Polygon : HitArea {
 	val type: Int = definedExternally
 	var points: Array<Double>
 
