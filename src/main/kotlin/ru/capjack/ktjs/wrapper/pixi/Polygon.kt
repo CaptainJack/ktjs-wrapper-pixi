@@ -4,12 +4,8 @@ package ru.capjack.ktjs.wrapper.pixi
 
 
 external class Polygon : HitArea {
-	var x: Int
-	var y: Int
-	var radius: Double
-	
 	val type: Int = definedExternally
-	fun clone(): Circle
+	var points: Array<Double>
 	override fun contains(x: Int, y: Int): Boolean
 	fun getBounds(): Rectangle
 	
