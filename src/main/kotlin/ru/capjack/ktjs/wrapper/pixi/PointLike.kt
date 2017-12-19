@@ -1,26 +1,9 @@
 package ru.capjack.ktjs.wrapper.pixi
 
-external open class PointLike(x: Double = 0.0, y: Double = 0.0) {
-	var x = x
-		private set(value) {
-			field = value
-		}
-	var y = y
-		private set(value) {
-			field = value
-		}
+external interface PointLike {
+	var x: Double
+	var y: Double
 	
-	fun set(x: Double?, y: Double?) {
-		if (x != null) {
-			this.x = x
-		}
-		if (y != null) {
-			this.y = y
-		}
-	}
-	
-	fun copy(point: PointLike) {
-		this.x = point.x
-		this.y = point.y
-	}
+	fun set(x: Double?, y: Double?)
+	fun copy(point: PointLike)
 }

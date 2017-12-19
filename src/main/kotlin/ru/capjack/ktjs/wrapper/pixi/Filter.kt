@@ -3,7 +3,7 @@
 package ru.capjack.ktjs.wrapper.pixi
 
 external class Filter {
-	
+	//todo:describe
 //	constructor(vertexSrc?: string, fragmentSrc?: string, uniforms?: UniformDataMap<U>);
 //
 //	vertexSrc?: string;

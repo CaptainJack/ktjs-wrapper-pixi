@@ -3,17 +3,6 @@
 package ru.capjack.ktjs.wrapper.pixi
 
 import ru.capjack.ktjs.wrapper.pixi.utils.EventEmitter
-import ru.capjack.ktjs.wrapper.pixi.Rectangle
-import ru.capjack.ktjs.wrapper.pixi.Filter
-import ru.capjack.ktjs.wrapper.pixi.HitArea
-import ru.capjack.ktjs.wrapper.pixi.Container
-import ru.capjack.ktjs.wrapper.pixi.PointLike
-import ru.capjack.ktjs.wrapper.pixi.TransformBase
-import ru.capjack.ktjs.wrapper.pixi.ObservablePoint
-import ru.capjack.ktjs.wrapper.pixi.Point
-import ru.capjack.ktjs.wrapper.pixi.Matrix
-import ru.capjack.ktjs.wrapper.pixi.CanvasRenderer
-import ru.capjack.ktjs.wrapper.pixi.WebGLRenderer
 
 external open class DisplayObject : EventEmitter {
 	var alpha: Boolean
