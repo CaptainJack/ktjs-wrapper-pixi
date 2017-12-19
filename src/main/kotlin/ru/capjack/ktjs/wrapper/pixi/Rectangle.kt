@@ -2,11 +2,12 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-import ru.capjack.ktjs.wrapper.pixi.HitArea
-import ru.capjack.ktjs.wrapper.pixi.Rectangle
-
-external class Rectangle(var x: Int = definedExternally, var y: Int = definedExternally, var width: Int = definedExternally, var height: Int = definedExternally) :
+external class Rectangle(x: Int = definedExternally, y: Int = definedExternally, width: Int = definedExternally, height: Int = definedExternally) :
 		HitArea {
+	var x: Int
+	var y: Int
+	var width: Int
+	var height: Int
 	
 	companion object {
 		val EMPTY: Rectangle = definedExternally
@@ -19,8 +20,8 @@ external class Rectangle(var x: Int = definedExternally, var y: Int = definedExt
 	var bottom: Int
 	
 	fun clone(): Rectangle
-	fun copy(rectangle: Rectangle):Rectangle
-	fun contains(x: Int, y: Int): Boolean
+	fun copy(rectangle: Rectangle): Rectangle
+	override fun contains(x: Int, y: Int): Boolean
 	fun enlarge(rectangle: Rectangle)
 	fun fit(rectangle: Rectangle)
 	fun pad(paddingX: Int, paddingY: Int)

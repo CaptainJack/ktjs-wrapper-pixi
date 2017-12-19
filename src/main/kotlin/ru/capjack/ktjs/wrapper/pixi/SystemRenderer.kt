@@ -3,6 +3,6 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class SystemRenderer {
+external open class SystemRenderer {
 	//todo:description
 }

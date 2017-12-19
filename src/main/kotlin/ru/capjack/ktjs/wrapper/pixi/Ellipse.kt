@@ -2,15 +2,15 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-import ru.capjack.ktjs.wrapper.pixi.HitArea
-import ru.capjack.ktjs.wrapper.pixi.Rectangle
-
-external class Ellipse(var x: Int = definedExternally, var y: Int = definedExternally, var width: Int = definedExternally, var height: Int = definedExternally) :
+external class Ellipse(x: Int = definedExternally, y: Int = definedExternally, width: Int = definedExternally, height: Int = definedExternally) :
 		HitArea {
-	
-	val type: Int = definedExternally
+	var x: Int
+	var y: Int
+	var width: Int
+	var height: Int
+	val type: Int
 	
 	fun clone(): Ellipse
-	fun contains(x: Int, y: Int): Boolean
+	override fun contains(x: Int, y: Int): Boolean
 	fun getBounds(): Rectangle
 }

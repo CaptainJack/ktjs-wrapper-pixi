@@ -2,9 +2,7 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-import ru.capjack.ktjs.wrapper.pixi.PointLike
-
-external class Point(x: Double = definedExternally, y: Double = definedExternally) : PointLike(x, y) {
+external class Point(x: Double = definedExternally, y: Double = definedExternally) : PointLike {
 	
 	fun clone(): Point
 	fun equals(p: PointLike): Boolean
