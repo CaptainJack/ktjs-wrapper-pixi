@@ -1,8 +1,6 @@
-@file:JsModule("pixi.js")
-
 package ru.capjack.ktjs.wrapper.pixi
 
-external interface ApplicationOptions : RendererOptions {
+external interface ApplicationOptions : AutoDetectRendererOptions {
 	var autoStart: Boolean?
 	var sharedTicker: Boolean?
 	var sharedLoader: Boolean?

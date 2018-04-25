@@ -1,14 +1,11 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi")
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class ObservablePoint(cb: () -> Any, scope: Any, x: Double = definedExternally, y: Double = definedExternally) : PointLike {
-	override var x: Double
-	override var y: Double
-	
-	override fun set(x: Double?, y: Double?)
-	override fun copy(point: PointLike)
-	
+external class ObservablePoint(cb: () -> Any) : PointLike {
 	var cb: () -> Any
+	
 	var scope: Any
+	
+	constructor(cb: () -> Any, scope: Any = definedExternally, x: Number = definedExternally, y: Number = definedExternally)
 }

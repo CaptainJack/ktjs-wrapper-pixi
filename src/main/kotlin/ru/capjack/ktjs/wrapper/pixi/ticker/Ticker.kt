@@ -1,5 +1,6 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi")
 @file:JsQualifier("ticker")
+@file:Suppress("PropertyName")
 
 package ru.capjack.ktjs.wrapper.pixi.ticker
 

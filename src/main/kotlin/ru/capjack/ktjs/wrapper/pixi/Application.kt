@@ -1,4 +1,4 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi")
 
 package ru.capjack.ktjs.wrapper.pixi
 
@@ -7,7 +7,16 @@ import ru.capjack.ktjs.wrapper.pixi.loaders.Loader
 import ru.capjack.ktjs.wrapper.pixi.ticker.Ticker
 
 external class Application() {
+	val screen: Rectangle
+	val view: HTMLCanvasElement
+	
+	var stage: Container
+	var ticker: Ticker
+	var loader: Loader
+	var renderer: SystemRenderer
+	
 	constructor(options: ApplicationOptions)
+	
 	constructor(
 		width: Int = definedExternally,
 		height: Int = definedExternally,
@@ -16,16 +25,11 @@ external class Application() {
 		useSharedTicker: Boolean = definedExternally
 	)
 	
-	var loader: Loader
-	var renderer: SystemRenderer
-	val screen: Rectangle
-	var stage: Container
-	var ticker: Ticker
-	val view: HTMLCanvasElement
-	
 	fun destroy(removeView: Boolean = definedExternally)
-	fun renter()
+	
+	fun render()
+	
 	fun start()
+	
 	fun stop()
 }
-

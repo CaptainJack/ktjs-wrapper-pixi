@@ -1,18 +1,24 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi")
 
 package ru.capjack.ktjs.wrapper.pixi
 
 
 external class Polygon : HitArea {
-	val type: Int = definedExternally
 	var points: Array<Double>
 	
+	val type: Int
+	
 	constructor(points: Array<Point>)
+	
 	constructor(points: Array<Double>)
+	
 	constructor(vararg points: Point)
-	constructor(vararg points: Double)
+	
+	constructor(vararg points: Number)
 	
 	fun clone(): Polygon
-	override fun contains(x: Int, y: Int): Boolean
+	
+	override fun contains(x: Number, y: Number): Boolean
+	
 	fun close()
 }
