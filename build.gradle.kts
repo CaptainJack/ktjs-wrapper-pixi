@@ -1,7 +1,6 @@
 import de.undercouch.gradle.tasks.download.Download
 import org.jetbrains.kotlin.gradle.tasks.Kotlin2JsCompile
 import ru.capjack.degos.publish.DegosPublishExtension
-import java.net.URL
 
 group = "ru.capjack.ktjs"
 
