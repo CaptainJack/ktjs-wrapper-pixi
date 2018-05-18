@@ -5,20 +5,20 @@ import ru.capjack.ktjs.common.geom.Axis
 
 fun Container.getSize(axis: Axis): Double {
 	return when (axis) {
-		Axis.HORIZONTAL -> this.width
-		Axis.VERTICAL   -> this.height
+		Axis.X -> this.width
+		Axis.Y   -> this.height
 	}
 }
 
-fun Container.setSize(horizontal: Number, vertical: Number) {
-	width = horizontal.toDouble()
-	height = vertical.toDouble()
+fun Container.setSize(x: Number, y: Number) {
+	width = x.toDouble()
+	height = y.toDouble()
 }
 
 fun Container.setSize(axis: Axis, value: Number) {
 	when (axis) {
-		Axis.HORIZONTAL -> width = value.toDouble()
-		Axis.VERTICAL   -> height = value.toDouble()
+		Axis.X -> width = value.toDouble()
+		Axis.Y   -> height = value.toDouble()
 	}
 }
 
@@ -38,5 +38,5 @@ fun <T : Displayable> Container.addChild(x: Number, y: Number, displayable: T): 
 }
 
 fun Container.setSize(values: AxialValues<out Number>) {
-	setSize(values.horizontal, values.vertical)
+	setSize(values.x, values.y)
 }
