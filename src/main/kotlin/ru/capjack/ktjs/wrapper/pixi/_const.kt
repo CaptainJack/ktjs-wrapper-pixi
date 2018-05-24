@@ -3,6 +3,7 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
+@JsName("SHAPES")
 external enum class SHAPE {
 	POLY,
 	RECT,
@@ -17,11 +18,13 @@ external enum class RENDERER_TYPE {
 	CANVAS
 }
 
+@JsName("SCALE_MODES")
 external enum class SCALE_MODE {
 	LINEAR,
 	NEAREST
 }
 
+@JsName("BLEND_MODES")
 external enum class BLEND_MODE {
 	NORMAL,
 	ADD,
