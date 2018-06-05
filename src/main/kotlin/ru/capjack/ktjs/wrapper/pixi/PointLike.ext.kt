@@ -1,6 +1,6 @@
 package ru.capjack.ktjs.wrapper.pixi
 
-import ru.capjack.ktjs.common.geom.AxialValues
+import ru.capjack.ktjs.common.geom.Axial
 import ru.capjack.ktjs.common.geom.Axis
 
 operator fun PointLike.get(axis: Axis): Double {
@@ -21,7 +21,7 @@ fun PointLike.set(both: Number) {
 	set(both, both)
 }
 
-fun PointLike.set(values: AxialValues<out Number>) {
+fun PointLike.set(values: Axial<out Number>) {
 	set(values.x.toDouble(), values.y.toDouble())
 }
 

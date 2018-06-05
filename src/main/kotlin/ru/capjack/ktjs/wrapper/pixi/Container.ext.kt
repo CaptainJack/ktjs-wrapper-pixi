@@ -1,6 +1,6 @@
 package ru.capjack.ktjs.wrapper.pixi
 
-import ru.capjack.ktjs.common.geom.AxialValues
+import ru.capjack.ktjs.common.geom.Axial
 import ru.capjack.ktjs.common.geom.Axis
 
 fun Container.getSize(axis: Axis): Double {
@@ -37,6 +37,6 @@ fun <T : Displayable> Container.addChild(x: Number, y: Number, displayable: T): 
 	return displayable
 }
 
-fun Container.setSize(values: AxialValues<out Number>) {
+fun Container.setSize(values: Axial<out Number>) {
 	setSize(values.x, values.y)
 }
