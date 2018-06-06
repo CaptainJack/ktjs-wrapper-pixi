@@ -30,11 +30,6 @@ tasks.withType<Kotlin2JsCompile> {
 
 task<Download>("downloadPixi") {
 	src("https://github.com/pixijs/pixi.js/releases/download/v${ext["pixiVersion"]}/pixi.min.js")
-	dest("$buildDir/download/pixi.min.js")
-	doLast {
-		file("src/main/resources/js/pixi.js").writeText(
-			file("$buildDir/download/pixi.min.js").readText()
-				.replace("//# sourceMappingURL=pixi.min.js.map\n", "")
-		)
-	}
+	src("https://github.com/pixijs/pixi.js/releases/download/v${ext["pixiVersion"]}/pixi.min.js.map")
+	dest("src/main/resources/js")
 }

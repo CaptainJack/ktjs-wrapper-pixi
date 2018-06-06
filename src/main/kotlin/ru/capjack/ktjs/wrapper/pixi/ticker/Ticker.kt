@@ -1,4 +1,4 @@
-@file:JsModule("ktjs-wrapper-pixi/pixi")
+@file:JsModule("ktjs-wrapper-pixi/pixi.min")
 @file:JsQualifier("ticker")
 @file:Suppress("PropertyName")
 
