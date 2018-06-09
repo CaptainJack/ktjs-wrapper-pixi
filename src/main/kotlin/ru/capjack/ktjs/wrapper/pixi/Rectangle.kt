@@ -18,10 +18,10 @@ external class Rectangle(
 	var width: Double
 	var height: Double
 	
-	var left: Double
-	var right: Double
-	var top: Double
-	var bottom: Double
+	val left: Double
+	val right: Double
+	val top: Double
+	val bottom: Double
 	
 	val type: Int = definedExternally
 	
