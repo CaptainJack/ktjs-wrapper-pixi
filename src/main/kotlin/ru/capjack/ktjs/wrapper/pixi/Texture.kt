@@ -25,6 +25,8 @@ open external class Texture(
 	
 	var baseTexture: BaseTexture
 	
+	var frame: Rectangle
+	
 	var width: Double
 	
 	var height: Double
