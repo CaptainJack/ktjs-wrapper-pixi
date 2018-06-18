@@ -37,6 +37,14 @@ fun <T : Displayable> Container.addChild(x: Number, y: Number, displayable: T): 
 	return displayable
 }
 
+fun Container.addChildren(vararg list: DisplayObject) {
+	list.forEach { addChild(it) }
+}
+
+fun Container.addChildren(vararg list: Displayable) {
+	list.forEach { addChild(it) }
+}
+
 fun Container.setSize(values: Axial<out Number>) {
 	setSize(values.x, values.y)
 }
