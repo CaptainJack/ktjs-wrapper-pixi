@@ -3,32 +3,26 @@
 package ru.capjack.ktjs.wrapper.pixi
 
 external class GraphicsData(
-		lineWidth: Int,
+		lineWidth: Number,
 		lineColor: Int,
 		lineAlpha: Double,
 		fillColor: Int,
 		fillAlpha: Double,
 		fill: Boolean,
 		nativeLines: Boolean,
-		shape: Any
+		shape: Shape,
+		lineAlignment: Double
 ) {
 	var fill: Boolean
-	
 	var fillAlpha: Double
-	
 	var fillColor: Int
-	
+	var lineAlignment: Double
 	var lineAlpha: Double
-	
 	var lineColor: Int
-	
-	var lineWidth: Int
-	
+	var lineWidth: Double
 	var nativeLines: Boolean
-	
-	var shape: Any
-	
-	var type: Int?
+	var shape: Shape
+	var type: SHAPE
 	
 	
 	constructor(lineWidth: Int, lineColor: Int, lineAlpha: Double, fillColor: Int, fillAlpha: Double, fill: Boolean, nativeLines: Boolean, shape: Circle)
@@ -41,17 +35,7 @@ external class GraphicsData(
 	
 	constructor(lineWidth: Int, lineColor: Int, lineAlpha: Double, fillColor: Int, fillAlpha: Double, fill: Boolean, nativeLines: Boolean, shape: Polygon)
 	
-	fun addHole(shape: Any)
-	
-	fun addHole(shape: Circle)
-	
-	fun addHole(shape: Ellipse)
-	
-	fun addHole(shape: Rectangle)
-	
-	fun addHole(shape: RoundedRectangle)
-	
-	fun addHole(shape: Polygon)
+	fun addHole(shape: Shape)
 	
 	fun clone(): GraphicsData
 	

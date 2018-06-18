@@ -3,7 +3,7 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class Circle(x: Number = definedExternally, y: Number = definedExternally, radius: Number = definedExternally) : HitArea {
+external class Circle(x: Number = definedExternally, y: Number = definedExternally, radius: Number = definedExternally) : Shape {
 	val type: SHAPE
 	
 	var x: Double

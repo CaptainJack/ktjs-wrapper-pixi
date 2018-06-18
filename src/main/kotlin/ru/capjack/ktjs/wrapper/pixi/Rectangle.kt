@@ -7,7 +7,7 @@ external class Rectangle(
 	y: Number = definedExternally,
 	width: Number = definedExternally,
 	height: Number = definedExternally
-) : HitArea {
+) : Shape {
 	
 	companion object {
 		val EMPTY: Rectangle = definedExternally

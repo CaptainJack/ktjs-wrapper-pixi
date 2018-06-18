@@ -3,20 +3,14 @@
 package ru.capjack.ktjs.wrapper.pixi
 
 open external class Graphics() : Container {
-	var blendMode: Int
-	
+	var blendMode: BLEND_MODE
 	var boundsPadding: Double
-	
 	var fillAlpha: Double
-	
 	var isMask: Boolean
-	
-	var lineColor: Int//String in docs
-	
-	var lineWidth: Int
-	
+	var lineAlignment: Double
+	var lineColor: Int
+	var lineWidth: Double
 	var nativeLines: Boolean
-	
 	var tint: Int
 	
 	constructor(nativeLines: Boolean)
@@ -45,17 +39,11 @@ open external class Graphics() : Container {
 	
 	fun drawRoundedRect(x: Number, y: Number, width: Number, height: Number, radius: Number): Graphics
 	
-	fun drawShape(shape: Circle): GraphicsData
+	fun drawShape(shape: Shape): GraphicsData
 	
-	fun drawShape(shape: Ellipse): GraphicsData
+	fun drawStar(x: Number, y:Number, points:Int, radius:Number, innerRadius:Number= definedExternally, rotation:Number = definedExternally): Graphics
 	
-	fun drawShape(shape: Polygon): GraphicsData
-	
-	fun drawShape(shape: Rectangle): GraphicsData
-	
-	fun drawShape(shape: RoundedRectangle): GraphicsData
-	
-	fun lineStyle(lineWidth: Number = definedExternally, color: Int = definedExternally, alpha: Double = definedExternally): Graphics
+	fun lineStyle(lineWidth: Number = definedExternally, color: Int = definedExternally, alpha: Double = definedExternally, alignment: Double = definedExternally): Graphics
 	
 	fun bezierCurveTo(cpX: Number, cpY: Number, cpX2: Number, cpY2: Number, toX: Number, toY: Number): Graphics
 	
@@ -74,4 +62,9 @@ open external class Graphics() : Container {
 	fun updateLocalBounds()
 	
 	fun isFastRect(): Boolean
+	
+	fun addHole(): Graphics
+	
+	fun closePath(): Graphics
+	
 }

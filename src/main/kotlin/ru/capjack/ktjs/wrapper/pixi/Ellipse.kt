@@ -2,7 +2,7 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class Ellipse(x: Number = definedExternally, y: Number = definedExternally, width: Number = definedExternally, height: Number = definedExternally) : HitArea {
+external class Ellipse(x: Number = definedExternally, y: Number = definedExternally, width: Number = definedExternally, height: Number = definedExternally) : Shape {
 	var x: Double
 	
 	var y: Double

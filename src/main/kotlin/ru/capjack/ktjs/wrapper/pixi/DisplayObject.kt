@@ -7,53 +7,29 @@ import ru.capjack.ktjs.wrapper.pixi.utils.EventEmitter
 
 open external class DisplayObject : EventEmitter {
 	var cacheAsBitmap: Boolean
-	
 	var cursor: String
-	
 	var buttonMode: Boolean
-	
 	var interactive: Boolean
-	
 	var filterArea: Rectangle
-	
 	var filters: Array<out Filter>?
-	
-	var hitArea: HitArea
-	
+	var hitArea: Shape
 	var transform: TransformBase
-	
 	val localTransform: Matrix
-	
 	val worldAlpha: Double
-	
 	val worldTransform: Matrix
-	
 	val worldVisible: Boolean
-	
 	var x: Double
-	
 	var y: Double
-	
 	var alpha: Double
-	
 	var pivot: PointLike
-	
 	var position: PointLike
-	
 	var rotation: Double
-	
 	var scale: PointLike
-	
 	var skew: ObservablePoint
-	
 	var visible: Boolean
-	
 	var mask: DisplayObject?
-	
 	val parent: Container?
-	
 	var renderable: Boolean
-	
 	
 	open fun destroy()
 	

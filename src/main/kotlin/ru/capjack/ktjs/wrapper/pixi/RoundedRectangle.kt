@@ -8,7 +8,7 @@ external class RoundedRectangle(
 		width: Number = definedExternally,
 		height: Number = definedExternally,
 		radius: Number = definedExternally
-) : HitArea {
+) : Shape {
 	
 	var x: Double
 	

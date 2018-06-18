@@ -4,11 +4,8 @@ package ru.capjack.ktjs.wrapper.pixi
 
 open external class Container : DisplayObject {
 	val children: Array<DisplayObject>
-	
 	var interactiveChildren: Boolean
-	
 	var width: Double
-	
 	var height: Double
 	
 	fun calculateBounds()
