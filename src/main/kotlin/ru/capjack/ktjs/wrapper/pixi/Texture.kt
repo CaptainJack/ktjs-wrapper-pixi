@@ -2,6 +2,7 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
+import org.w3c.dom.HTMLVideoElement
 import ru.capjack.ktjs.wrapper.pixi.utils.EventEmitter
 
 open external class Texture(
@@ -19,6 +20,8 @@ open external class Texture(
 		fun fromImage(imageUrl: String, crossOrigin: Boolean = definedExternally, scaleMode: SCALE_MODE = definedExternally, sourceScale: Double = definedExternally): Texture
 		
 		fun fromLoader(source: dynamic, imageUrl: String, name: String): Any
+		
+		fun fromVideo(video: HTMLVideoElement, scaleMode: SCALE_MODE = definedExternally): Texture
 		
 		fun fromVideoUrl(videoUrl: String, scaleMode: SCALE_MODE = definedExternally): Texture
 	}

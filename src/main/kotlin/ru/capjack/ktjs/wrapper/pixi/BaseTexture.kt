@@ -13,12 +13,11 @@ open external class BaseTexture(source: dynamic, scaleMode: SCALE_MODE = defined
 	}
 	
 	open val source: dynamic
-	
 	val hasLoaded: Boolean
-	
 	val sourceScale: Double
-	
 	var resolution: Double
+	
+	fun update()
 	
 	fun destroy()
 }
