@@ -2,7 +2,7 @@
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class Graphics() : Container {
+open external class Graphics() : Container {
 	var blendMode: Int
 	
 	var boundsPadding: Double
