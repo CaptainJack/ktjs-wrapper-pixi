@@ -5,7 +5,7 @@ import ru.capjack.degos.publish.DegosPublishExtension
 group = "ru.capjack.ktjs"
 
 plugins {
-	id("kotlin2js") version "1.2.41"
+	id("kotlin2js") version "1.2.50"
 	id("ru.capjack.degos.publish") version "1.6.0"
 	id("nebula.release") version "6.0.0"
 	id("de.undercouch.download") version "3.4.2"
