@@ -1,4 +1,4 @@
-@file:JsModule("ktjs-wrapper-pixi/filter-motion-blur")
+@file:JsModule("ktjs-wrapper-pixi/filter-glow")
 
 package ru.capjack.ktjs.wrapper.pixi.filters
 
