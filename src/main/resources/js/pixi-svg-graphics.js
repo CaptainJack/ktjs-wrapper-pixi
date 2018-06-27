@@ -545,6 +545,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    this.lineTo2(x, y);
 	                    z += 1;
 	                    break;
+		
+		            case 'q':
+			            this.quadraticCurveTo(
+				            points[z].x,
+				            points[z].y,
+				            points[z + 1].x,
+				            points[z + 1].y
+			            );
+			            z += 2;
+			            break;
 	                // curveto command
 	                case 'c':
 	                    this.bezierCurveTo2(
@@ -660,6 +670,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    lastPoint = point;
 	                    p += 2;
 	                    break;
+		            case 'q':
+			            var point1 = {} , point2 = {}
+			            point1.x = parseScientific(args[p]) + offset.x;
+			            point1.y = parseScientific(args[p + 1]) + offset.y;
+			            point2.x = parseScientific(args[p + 2]) + offset.x;
+			            point2.y = parseScientific(args[p + 3]) + offset.y;
+			            points.push(point1);
+			            points.push(point2);
+			            lastPoint = point2;
+			            lastControl = point1;
+			            p += 4;
+			            break;
 	                case 'c':
 	                    var point1 = {} , point2 = {} , point3 = {};
 	                    point1.x = parseScientific(args[p]) + offset.x;
