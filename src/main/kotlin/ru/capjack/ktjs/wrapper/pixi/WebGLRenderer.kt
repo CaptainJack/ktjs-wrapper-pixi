@@ -1,8 +1,6 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi.min")
 
 package ru.capjack.ktjs.wrapper.pixi
-
-import ru.capjack.ktjs.wrapper.pixi.SystemRenderer
 
 external class WebGLRenderer : SystemRenderer {
 	//todo:description

@@ -1,7 +1,5 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi.min")
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class CanvasMaskManager {
-	//todo:describe
-}
+external class CanvasMaskManager

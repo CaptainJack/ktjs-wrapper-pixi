@@ -1,19 +1,20 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi.min")
 
 package ru.capjack.ktjs.wrapper.pixi
 
 external class TransformBase {
-	//	todo: в описании этого нет, в сорцах есть и в описании ts тоже
+	
+	var localTransform: Matrix
+	
+	var worldTransform: Matrix
+	
 	companion object {
 		val IDENTITY: TransformBase = definedExternally
 	}
 	
-	var localTransform: Matrix
-	var worldTransform: Matrix
-	
 	fun updateLocalTransform()
+	
 	fun updateTransform(parentTransform: TransformBase)
-	//	todo: in source it looks:
-// TransformBase.prototype.updateWorldTransform = TransformBase.prototype.updateTransform;
+	
 	fun updateWorldTransform(parentTransform: TransformBase)
 }

@@ -1,8 +1,24 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi.min")
 @file:JsQualifier("loaders")
 
 package ru.capjack.ktjs.wrapper.pixi.loaders
 
 external class Resource {
-
+	val name: String
+	val url: String
+	val extension: String
+	val type: TYPE
+	
+	var data: dynamic
+	val metadata: dynamic
+	
+	enum class TYPE {
+		UNKNOWN,
+		JSON,
+		XML,
+		IMAGE,
+		AUDIO,
+		VIDEO,
+		TEXT
+	}
 }

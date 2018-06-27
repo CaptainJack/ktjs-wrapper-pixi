@@ -1,28 +1,39 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi.min")
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class Rectangle(x: Int = definedExternally, y: Int = definedExternally, width: Int = definedExternally, height: Int = definedExternally) :
-		HitArea {
-	var x: Int
-	var y: Int
-	var width: Int
-	var height: Int
+external class Rectangle(
+	x: Number = definedExternally,
+	y: Number = definedExternally,
+	width: Number = definedExternally,
+	height: Number = definedExternally
+) : Shape {
 	
 	companion object {
 		val EMPTY: Rectangle = definedExternally
 	}
 	
+	var x: Double
+	var y: Double
+	var width: Double
+	var height: Double
+	
+	val left: Double
+	val right: Double
+	val top: Double
+	val bottom: Double
+	
 	val type: Int = definedExternally
-	var left: Int
-	var right: Int
-	var top: Int
-	var bottom: Int
+	
+	override fun contains(x: Number, y: Number): Boolean
 	
 	fun clone(): Rectangle
+	
 	fun copy(rectangle: Rectangle): Rectangle
-	override fun contains(x: Int, y: Int): Boolean
+	
 	fun enlarge(rectangle: Rectangle)
+	
 	fun fit(rectangle: Rectangle)
-	fun pad(paddingX: Int, paddingY: Int)
+	
+	fun pad(paddingX: Number, paddingY: Number)
 }

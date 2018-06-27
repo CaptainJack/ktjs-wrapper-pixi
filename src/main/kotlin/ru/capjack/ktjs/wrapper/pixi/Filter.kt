@@ -1,26 +1,17 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi.min")
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class Filter() : Shader {
-	//todo:describe
-//	constructor(vertexSrc:String, fragmentSrc:String, uniforms)
-
-//	constructor(vertexSrc?: string, fragmentSrc?: string, uniforms?: UniformDataMap<U>);
-//
-//	vertexSrc?: string;
-//	fragmentSrc: string;
-//	blendMode: number;
-//	uniforms: U;
-//	glShaders: any;
-//	glShaderKey?: number;
-//	padding: number;
-//	resolution: number;
-//	enabled: boolean;
-//	autoFit: boolean;
-//	apply(filterManager: FilterManager, input: RenderTarget, output: RenderTarget, clear?: boolean, currentState?: any): void;
-//
-//	static defaultVertexSrc: string;
-//	static defaultFragmentSrc: string;
-
+open external class Filter : Shader {
+	var autoFit: Boolean
+	var blendMode: BLEND_MODE
+	var enabled: Boolean
+	var fragmentSrc: String
+	var padding: Number
+	var resolution: Double
+	var uniforms: dynamic
+	var vertexSrc: String
+	
+	fun apply(filterManager: FilterManager, input: RenderTarget, output: RenderTarget, clear: Boolean, currentState: dynamic = definedExternally)
 }
+

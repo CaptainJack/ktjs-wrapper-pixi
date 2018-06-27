@@ -1,7 +1,6 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi.min")
+@file:JsNonModule
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external open class Shader {
-//todo:describe
-}
+open external class Shader

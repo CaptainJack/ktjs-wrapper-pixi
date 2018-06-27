@@ -1,22 +1,32 @@
-@file:JsModule("pixi.js")
+@file:JsModule("ktjs-wrapper-pixi/pixi.min")
 
 package ru.capjack.ktjs.wrapper.pixi
 
-external class RoundedRectangle(x: Int = definedExternally, y: Int = definedExternally, width: Int = definedExternally,
-                                height: Int = definedExternally, radius: Int) :
-		HitArea {
+external class RoundedRectangle(
+		x: Number = definedExternally,
+		y: Number = definedExternally,
+		width: Number = definedExternally,
+		height: Number = definedExternally,
+		radius: Number = definedExternally
+) : Shape {
 	
-	var x: Int
-	var y: Int
-	var width: Int
-	var height: Int
-	var radius: Int
+	var x: Double
+	
+	var y: Double
+	
+	var width: Double
+	
+	var height: Double
+	
+	var radius: Double
+	
+	val type: Int = definedExternally
 	
 	companion object {
 		val EMPTY: Rectangle = definedExternally
 	}
 	
-	val type: Int = definedExternally
 	fun clone(): Rectangle
-	override fun contains(x: Int, y: Int): Boolean
+	
+	override fun contains(x: Number, y: Number): Boolean
 }
