@@ -11,5 +11,7 @@ open external class Sprite(texture: Texture = definedExternally) : Container, Te
 	
 	var anchor: ObservablePoint
 	
+	var blendMode:BLEND_MODE
+	
 	override var texture: Texture
 }
