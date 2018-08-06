@@ -5,9 +5,9 @@ import ru.capjack.degos.publish.DegosPublishExtension
 group = "ru.capjack.ktjs"
 
 plugins {
-	id("kotlin2js") version "1.2.50"
+	id("kotlin2js") version "1.2.60"
 	id("ru.capjack.degos.publish") version "1.7.0"
-	id("nebula.release") version "6.0.0"
+	id("nebula.release") version "6.3.5"
 	id("de.undercouch.download") version "3.4.2"
 }
 
@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
 	implementation(kotlin("stdlib-js"))
-	implementation("ru.capjack.ktjs:ktjs-common:0.3.0-SNAPSHOT")
+	implementation("ru.capjack.ktjs:ktjs-common:0.4.0")
 }
 
 tasks.withType<Kotlin2JsCompile> {
