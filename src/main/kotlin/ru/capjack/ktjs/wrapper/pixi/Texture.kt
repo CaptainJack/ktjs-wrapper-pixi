@@ -24,6 +24,8 @@ open external class Texture(
 		fun fromVideo(video: HTMLVideoElement, scaleMode: SCALE_MODE = definedExternally): Texture
 		
 		fun fromVideoUrl(videoUrl: String, scaleMode: SCALE_MODE = definedExternally): Texture
+		
+		fun fromCanvas(canvas: CanvasRenderer, scaleMode: SCALE_MODE = definedExternally, origin:String = definedExternally):Texture
 	}
 	
 	var baseTexture: BaseTexture
