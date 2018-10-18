@@ -12,6 +12,7 @@ plugins {
 }
 
 repositories {
+	jcenter()
 	maven("http://artifactory.capjack.ru/public")
 }
 

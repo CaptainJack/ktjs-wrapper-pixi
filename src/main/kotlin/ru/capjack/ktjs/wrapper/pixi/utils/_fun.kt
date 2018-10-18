@@ -4,3 +4,5 @@
 package ru.capjack.ktjs.wrapper.pixi.utils
 
 external fun skipHello()
+
+external fun isWebGLSupported()
