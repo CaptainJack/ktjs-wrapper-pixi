@@ -44,3 +44,9 @@ external enum class BLEND_MODE {
 	COLOR,
 	LUMINOSITY
 }
+
+external enum class PRECISION {
+	LOW,
+	MEDIUM,
+	HIGH
+}
