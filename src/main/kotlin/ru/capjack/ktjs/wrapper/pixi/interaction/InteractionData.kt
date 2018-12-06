@@ -1,4 +1,4 @@
-@file:JsModule("ktjs-wrapper-pixi/pixi.min")
+@file:JsModule("ktjs-wrapper-pixi/pixi")
 @file:JsQualifier("interaction")
 
 package ru.capjack.ktjs.wrapper.pixi.interaction

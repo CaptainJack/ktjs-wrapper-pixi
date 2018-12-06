@@ -30,6 +30,8 @@ tasks.withType<Kotlin2JsCompile> {
 }
 
 task<Download>("downloadPixi") {
+	src("https://pixijs.download/v${ext["pixiVersion"]}/pixi.js")
+	src("https://pixijs.download/v${ext["pixiVersion"]}/pixi.js.map")
 	src("https://pixijs.download/v${ext["pixiVersion"]}/pixi.min.js")
 	src("https://pixijs.download/v${ext["pixiVersion"]}/pixi.min.js.map")
 	dest("src/main/resources/js")
